@@ -16,12 +16,15 @@
       }
 
       /* Child Selector */
+      /* div ke andar ka para ka color change ho jaye
+         per direct child hona chahiye oo kisi our tag ke andar nahi hona chahiye */
       div > p {
         color: blue;
         background-color: brown;
       }
 
       /* Descendent Selector */
+      /* div ke andar ka koi bhi para ka color change ho jaye */
       div p {
         background-color: yellow;
       }
@@ -33,31 +36,32 @@
       }
 
       /* Pseudo Selactor */
-      a:visited{
-        color:yellow
+      a:visited {
+        color: yellow;
       }
 
-      a:link{
-        color:green;
+      a:link {
+        color: green;
       }
 
-      a:active{
+      a:active {
         background-color: red;
       }
 
-      a:hover{
+      a:hover {
         background-color: cyan;
       }
 
-      p:first-child{
-        background-color:maroon;
+      p:first-child {
+        /* div ke andar ka sirf pahela para ka color change ho jaye */
+        background-color: maroon;
       }
     </style>
   </head>
   <body>
     <main class="one">
-        <p>I am First </p>
-        <p>I am Second </p>
+      <p>I am First</p>
+      <p>I am Second</p>
     </main>
     <div class="red">
       I am a div
