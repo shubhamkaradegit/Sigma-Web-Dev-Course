@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: cyan !important;
+        }
+        .yellow{
+               color:yellow;
+        }
+        .cred{
+            color: red;
+        }
+        .cpurple{
+            color: rgb(221, 238, 70);
+        }
+        /* attribute selactor */
+        [data-x=a]{
+            background-color: rgb(250, 245, 245);
+        }
+        /* css contains cascade algorithm
+        1 position matter last postion will apply
+          per ye same selector ex.class main hota hai */
+
+
+        /* the specificity is 1 + 10 + 10 + 10  +10 */
+
+        a.harryclass.rohan-class[href]:hover{
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: blue; class="yellow cred cpurple data-x="a" ">CSS Specificity</h1>
+     <ol>
+        <h2>Specificity</h2>
+        <li>Inline CSS  -1000</li>
+        <li>ID Selactor  -100</li>
+        <li>Class or Attribute Selactor or pseudo class -10</li>
+        <li>Element Selactor  -1</li>
+        <li>Universal Selactor  - 0</li>
+        
+        
+     </ol>
+</body>
+</html>
