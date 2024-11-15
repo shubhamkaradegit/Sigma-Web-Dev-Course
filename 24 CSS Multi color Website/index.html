@@ -9,9 +9,25 @@
         margin: 0;
         padding: 0;
       }
+      body {
+        background-color: var(--seccolor);
+      }
       :root {
-        --color: rgb(252, 4, 219);
-        --backcolor: rgb(253, 190, 229);
+        --color: rgb(255, 255, 255);
+        --backcolor: rgb(248, 13, 158);
+        --seccolor: rgb(253, 112, 190);
+      }
+
+      :root {
+        --color: rgb(255, 255, 255);
+        --backcolor: rgb(0, 255, 55);
+        --seccolor: rgb(147, 250, 170);
+      }
+
+      :root {
+        --color: rgb(255, 255, 255);
+        --backcolor: rgb(2, 27, 253);
+        --seccolor: rgb(197, 175, 248);
       }
       nav {
         color: var(--color);
@@ -27,16 +43,20 @@
         justify-content: center;
         gap: 70px;
       }
+      ul li a {
+        color: var(--color);
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Comntact</li>
-          <li>Services</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Services</a></li>
         </ul>
       </nav>
     </header>
