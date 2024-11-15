@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desinging Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: black;
+      }
+      main {
+        padding: 25px;
+      }
+      header {
+        position: sticky;
+        top: 0px;
+      }
+      nav {
+        height: 70px;
+        background-color: rgb(243, 45, 144);
+      }
+      .container {
+        height: 80vh;
+        margin: 20px;
+        padding: 5px;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+      }
+      .box {
+        height: 541px;
+        width: 577px;
+        margin: 5px;
+      }
+      .box1 {
+        background-color: pink;
+      }
+      .box2 {
+        background-color: rgb(67, 67, 219);
+      }
+      .content {
+        padding: 41px;
+        border: 2px solid white;
+        margin: 32px 239px;
+        font-size: 2em;
+        border-radius: 44px;
+        color: white;
+        text-align: center;
+      }
+      .orange-box {
+        height: 55px;
+        width: 58px;
+        background-color: orange;
+        position: fixed;
+        bottom: 12px;
+        right: 23px;
+        border-radius: 260px;
+      }
+      footer {
+        height: 50px;
+        width: 100%;
+        background-color: rgb(210, 212, 40);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+      </div>
+      <div class="content">Welcome to this Sigma web Development Express</div>
+      <div class="orange-box"></div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
