@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS FIlter</title>
+    <style>
+      /* img{
+            filter: blur(10px);
+        } */
+      .img1 {
+        filter: brightness(122%);
+        filter: invert(1);
+      }
+      .img2 {
+        filter: brightness(100%);
+      }
+      .img3 {
+        /* filter: grayscale(100%); */
+        filter: sepia(100%);
+        opacity: 0.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        class="img1"
+        src="https://i.pinimg.com/236x/be/a8/9d/bea89d5e495a8946113d88ce69d65cae.jpg"
+      />
+      <img class="img2" src="rashmika.avif" height="400px" />
+      <img class="img3" src="vijay.jpg" height="400px" width="300px" />
+    </div>
+  </body>
+</html>
