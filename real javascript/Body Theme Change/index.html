@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin: 1px;
+        padding: 28px;
+      }
+      .box {
+        height: 14vh;
+        width: 35vh;
+        background-color: grey;
+        
+      }
+      select {
+        
+        margin: 67px;
+        padding: 14px 370px 14px 5px
+      }
+      @media (max-width:805px){
+        
+        body{
+            background-color: yellow;
+        }
+        .box{
+            background-color: red;
+        }
+
+      }
+    </style>
+  </head>
+  <body id="body">
+    <select id="select">
+      <option value="light" id="light">light</option>
+      <option value="dark" id="dark">dark</option>
+    </select>
+    <div class="container">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      
+   
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
