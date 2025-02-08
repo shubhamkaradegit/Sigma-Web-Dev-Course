@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap:20px;
+        }
+        .box{
+            height:30vh;
+            width:40vw;
+            border:2px solid black;
+            
+            
+        }
+        select{
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <select id="select">
+            <option value="red" id="red">red</option>
+            <option value="orange" id="orange">orange</option>
+            <option value="yellow">yellow</option>
+            <option value="green">green</option>
+            <option value="violet">violet</option>
+            <option value="aqua">aqua</option>
+            <option value="pink">pink</option>
+        </select>
+    </div>
+    <script>
+      let select = document.getElementById("select");
+      
+      let box = document.querySelector(".box");
+
+      select.onchange = changeColor;
+   
+
+      function changeColor(){
+        if(select.value == "red"){
+            box.style.backgroundColor = "red";
+        }else if(select.value == "orange"){
+            box.style.backgroundColor = "orange"; 
+        }else if(select.value == "yellow"){
+            box.style.backgroundColor ="yellow"; 
+        }else if(select.value == "green"){
+            box.style.backgroundColor = "green"; 
+        }else if(select.value == "violet"){
+            box.style.backgroundColor = "violet"; 
+        }else if(select.value == "aqua"){
+            box.style.backgroundColor = "aqua"; 
+        }else{
+            box.style.backgroundColor = "pink"; 
+        }
+      }
+    </script>
+</body>
+</html>

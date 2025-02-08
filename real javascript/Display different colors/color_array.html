@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+      .button {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <h1>7 Different Colors</h1>
+    <div class="button">
+      <button id="color">change colors</button>
+      <button id="message">Message display</button>
+    </div>
+    <script>
+      let color = document.getElementById("color");
+      let message = document.getElementById("message");
+      let body = document.getElementById("body");
+
+      const colors = [
+        "red",
+        "orange",
+        "yellow",
+        "green",
+        "blue",
+        "indigo",
+        "violet"
+      ];
+      //intialise a counter
+      let index = 0;
+
+      color.addEventListener("click", () => {
+        body.style.backgroundColor = colors[index];
+
+        // display the current color name
+        // body.textContent = colors[index].toUpperCase();
+
+        //increment the color index,looping back to start if necessary
+        index = (index + 1) % colors.length;
+      });
+
+      message.addEventListener("click", () => {
+        alert("colors have been changed.");
+      });
+    </script>
+  </body>
+</html>

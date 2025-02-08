@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      h1{
+        text-align: center;
+      }
+      .button{
+        text-align: center;
+      }
+      
+    </style>
+</head>
+<body id="body">
+    <h1>7 Different Colors</h1>
+    <div class="button">
+
+        <button id="color">change colors</button>
+        <button id="message">Message display</button>
+    </div>
+    <script>
+      
+          
+     let color= document.getElementById("color");
+     let message = document.getElementById("message")
+     let body = document.getElementById("body")
+     function getRandomColor(){
+     let val1 = Math.ceil(0 + Math.random() * 255);
+     let val2 = Math.ceil(0 + Math.random() * 255);
+     let val3 = Math.ceil(0 + Math.random() * 255);
+     return `rgb(${val1}, ${val2}, ${val3})`;
+}
+
+color.addEventListener("click",() => {
+ 
+  setInterval(() => {
+    body.style.backgroundColor = getRandomColor()
+  }, 1000);
+}
+)
+    message.addEventListener("click",() => {
+      alert("colors have been changed.")
+    }
+    )  
+    </script>
+</body>
+</html>

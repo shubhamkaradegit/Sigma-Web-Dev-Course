@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #red{
+            background-color: red;
+            border: 2px solid red;
+        }
+        #orange{
+            background-color: orange;
+            border: 2px solid orange;
+        }
+        #yellow{
+            background-color: yellow;
+            border: 2px solid yellow;
+
+        }
+        #green{
+            background-color: green;
+            border: 2px solid green;
+        }
+        #violet{
+            background-color: violet;
+            border: 2px solid violet;
+        }
+        #aqua{
+            background-color: aqua;
+            border: 2px solid aqua;
+        }
+        #pink{
+            background-color: pink;
+            border: 2px solid pink;
+        }
+    </style>
+</head>
+<body id="body">
+    <div class="container">
+        <button id="red">Red</button>
+        <button id="orange">Orange</button>
+        <button id="yellow">yellow</button>
+        <button id="green">green</button>
+        <button id="violet">violet</button>
+        <button id="aqua">aqua</button>
+        <button id="pink">pink</button>
+    </div>
+    <script>
+        let red = document.getElementById("red");
+        let orange = document.getElementById("orange");
+        let yellow = document.getElementById("yellow");
+        let green = document.getElementById("green");
+        let violet = document.getElementById("violet");
+        let aqua = document.getElementById("aqua");
+        let pink = document.getElementById("pink");
+        let body = document.getElementById("body")
+        red.addEventListener("click",() => {
+          body.style.backgroundColor = "red";
+        }
+        )
+
+        orange.addEventListener("click",() => {
+          body.style.backgroundColor = "orange";
+        }
+        )
+
+        yellow.addEventListener("click",() => {
+          body.style.backgroundColor = "yellow";
+        }
+        )
+
+        green.addEventListener("click",() => {
+          body.style.backgroundColor = "green";
+        }
+        )
+
+        violet.addEventListener("click",() => {
+          body.style.backgroundColor = "violet";
+        }
+        )
+
+        aqua.addEventListener("click",() => {
+          body.style.backgroundColor = "aqua";
+        }
+        )
+
+        pink.addEventListener("click",() => {
+          body.style.backgroundColor = "pink";
+        }
+        )
+    </script>
+</body>
+</html>
